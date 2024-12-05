@@ -1,0 +1,39 @@
+.admin-container {
+    display: flex;
+
+    .admin-content {
+        width: 100%;
+        
+        .admin-header {
+            background-color: #4be340;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 999;
+
+            .admin-namepage {
+                color: white;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+
+            .admin-nav {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .admin-main {
+            margin-top: 70px;
+            padding: 20px;
+        }
+    }
+}
