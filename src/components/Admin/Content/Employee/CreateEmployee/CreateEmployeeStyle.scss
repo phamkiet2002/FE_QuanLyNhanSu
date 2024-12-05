@@ -1,0 +1,30 @@
+.modal-create {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .modal-dialog {
+        max-width: 60%; 
+        width: 60%; 
+        .modal-content {
+            padding: 20px; 
+        }
+    }
+    .modal-header {}
+
+    .modal-body {
+        label {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        max-height: 75vh;
+        overflow-y: auto;
+        padding-right: 15px;
+    }
+
+    .modal-footer {}
+
+    .valid {
+        color: red;
+    }
+}

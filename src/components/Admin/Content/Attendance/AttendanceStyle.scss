@@ -1,0 +1,122 @@
+.Attendance {
+
+    .attendance-info {
+      .color-info {
+        display: flex;
+        align-items: center;
+  
+        span {
+          width: 14px;
+          height: 14px;
+          display: inline-block;
+          border-radius: 5px;
+          margin-right: 5px;
+        }
+        p {
+          margin-right: 20px;
+        }
+  
+        .font-size {
+          font-size: 12px !important;
+        }
+  
+        .span-success {
+          background: #28a745;
+        }
+        .span-warning {
+          background: #f1b44c;
+        }
+        .span-edited {
+          background: #007bff;
+        }
+      }
+    }
+    .table-responsive {
+      margin-bottom: 1rem;
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      .table-bordered {
+        thead {
+          background-color: #f8f9fa;
+          top: -1px;
+          position: sticky;
+          z-index: 1;
+          th {
+            vertical-align: middle;
+            text-align: left;
+            border-bottom-width: 2px;
+            border: 1px solid #eff2f7;
+            .sticky-col{
+                position: sticky;
+            }
+          }
+        }
+        tbody {
+          display: table-row-group;
+          vertical-align: middle;
+          unicode-bidi: isolate;
+          border-color: inherit;
+        }
+      }
+    }
+    .table-timekeeping {
+      max-height: calc(100vh - 170px);
+    }
+    .table {
+        border-collapse: collapse;
+      width: 100%;
+      color: #495057;
+      thead {
+        th {
+          border-bottom: 2px solid #eff2f7;
+          font-weight: 600;
+        }
+      }
+      td {
+        padding: .75rem;
+        vertical-align: top;
+        min-width: 140px;
+        max-height: 47px;
+      }
+    }
+    table {
+      display: block;
+      text-indent: initial;
+      unicode-bidi: isolate;
+      border-spacing: 2px;
+      border-collapse: collapse;
+    }
+    .scroll-table {
+        .sticky-col {
+            position: sticky;
+            left: -1px !important;
+            background-color: #f8f9fa;
+            .min-w-120 {
+              min-width: 120px;
+            }
+            
+      tbody {
+        tr {
+          td {
+            white-space: nowrap !important;
+            display: table-cell;
+            unicode-bidi: isolate;
+          }
+          
+            .text-center {
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+    .badge.ws-employee {
+      color: #495057;
+      font-size: 13px !important;
+      padding: .4rem .5rem !important;
+    }
+    .ws-employee:last-child {
+      margin-bottom: 0;
+    }
+  }

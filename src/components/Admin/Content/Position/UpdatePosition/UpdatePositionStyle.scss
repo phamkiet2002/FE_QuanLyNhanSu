@@ -1,0 +1,20 @@
+.modal-create {
+    display        : flex !important;
+    align-items    : center;
+    justify-content: center;
+
+    .modal-header {}
+
+    .modal-body {
+        label {
+            font-size  : 15px;
+            font-weight: 500;
+        }
+    }
+
+    .modal-footer {}
+
+    .valid {
+        color: red;
+    }
+}

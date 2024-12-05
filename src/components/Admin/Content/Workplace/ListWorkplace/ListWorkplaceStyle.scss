@@ -1,0 +1,57 @@
+.WorkPlace {
+    .m-1 {
+        margin: 30px;
+    }
+
+    .row-tool {
+        padding: 20px 0 0 20px;
+
+    }
+
+    .WorkPlace_table {
+        width          : 100%;
+        border-collapse: collapse;
+        border         : 1px solid #ddd;
+        box-shadow     : 0 2px 3px rgba(0, 0, 0, 0.1);
+
+        table thead {
+            background-color: #f8f8f8;
+            color           : #333;
+            font-weight     : bold;
+        }
+
+        table thead th {
+            padding      : 10px;
+            border-bottom: 2px solid #ddd;
+            text-align   : left;
+        }
+
+        table tbody tr {
+            border-bottom: 1px solid #ddd;
+            transition   : background-color 0.2s;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        table tbody td {
+            padding   : 10px;
+            text-align: left;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .WorkPlace_Status_active {
+            color      : green;
+            font-weight: bold;
+        }
+
+        .WorkPlace_Status_inactive {
+            color      : red;
+            font-weight: bold;
+        }
+    }
+}
