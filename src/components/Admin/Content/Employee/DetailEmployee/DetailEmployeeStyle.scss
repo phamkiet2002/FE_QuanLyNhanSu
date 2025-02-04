@@ -1,0 +1,115 @@
+.detail-employee-container {
+    display: flex;
+    padding: 20px;
+  
+    // Left sidebar with employee overview
+    .detail-employee-overview {
+      width: 300px;
+      border-right: 1px solid #f0f0f0;
+      text-align: center !important;
+      padding: 20px;
+      display: block;
+  
+      .text-center {
+        .header-profile-user {
+          width: 189px;
+          height: 189px;
+          padding: 3px;
+        }
+        
+        .rounded-circle {
+          border-radius: 50% !important;
+          border: #f0f0f0 solid 1px;
+        }
+      }
+  
+      h4 {
+        margin: 15px 0 5px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+  
+      .text-secondary {
+        color: #6c757d;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+  
+      .w-100 {
+        width: 100% !important;
+      }
+  
+      .btn-outline-primary {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  
+    // Main content area
+    .detail-employee-info {
+      flex: 1;
+      padding: 0 30px;
+  
+      // Header row with title and update button
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 15px;
+  
+        h5 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 600;
+        }
+  
+        .update-button {
+          width: 100px; 
+          height: 33px;
+          padding: 0 10px;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+  
+          .mr-1 {
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+          }
+        }
+      }
+  
+      // Tab navigation
+      .tab-detail-employee {
+        .nav-tabs {
+          border-bottom: 1px solid #dee2e6;
+          margin-bottom: 20px;
+  
+          .nav-link {
+            color: #495057;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+  
+            &.active {
+              color: #0470c3;
+              border-bottom: 2px solid #0470c3;
+            }
+          }
+        }
+  
+        // Tab content
+        .tab-content {
+          padding: 20px 0;
+  
+          .tab-pane {
+            h5 {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }

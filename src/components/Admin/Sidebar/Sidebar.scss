@@ -1,0 +1,104 @@
+.pro-sidebar {
+  color    : white;
+  position : fixed;
+  top      : 0;
+  left     : 0;
+  max-width: 265px;
+
+  background-color    : #2A3042;
+  //z-index           : 1000;
+
+  margin-top: 60px;
+
+  height  : 100vh;
+  overflow: hidden;
+
+  .pro-sidebar-inner {
+    background-color: #2A3042;
+
+    overflow: hidden;
+
+    .pro-sidebar-layout {
+      .pro-sidebar-header {
+        background-color: #2A3042;
+        position        : fixed;
+        top             : 0;
+        left            : 0;
+
+        &.collapsed {
+          width: calc(267px - 190px);
+        }
+
+        &:not(.collapsed) {
+          width: 267px;
+        }
+      }
+
+      .pro-sidebar-content {
+        color     : rgb(255, 255, 255);
+        overflow-y: auto;
+        max-height: calc(100vh - 60px);
+
+        .pro-menu-item {
+          &.active {
+            color: #00bfff;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-btn-wrapper {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  .sidebar-btn {
+    transition     : width 0.3s;
+    width          : 150px;
+    padding        : 1px 15px;
+    border-radius  : 40px;
+    background     : rgba(255, 255, 255, 0.05);
+    color          : #adadad;
+    text-decoration: none;
+    margin         : 0 auto;
+    height         : 35px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-overflow  : ellipsis;
+    overflow       : hidden;
+    font-weight    : bold;
+
+    span {
+      margin-left: 5px;
+      font-size  : 13px;
+    }
+
+    &:hover {
+      color: #2253d1;
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

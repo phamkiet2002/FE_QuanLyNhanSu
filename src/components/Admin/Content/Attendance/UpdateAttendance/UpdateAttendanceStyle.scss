@@ -1,0 +1,51 @@
+
+.modal-create {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  
+    .modal-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #eaeaea;
+    }
+  
+    .modal-body {
+      label {
+        font-size: 15px;
+        font-weight: 500;
+      }
+  
+      .time-input {
+        height: 45px;
+        border-radius: 8px;
+        border: 1px solid #dee2e6;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+  
+        &:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+      }
+  
+      .note-input {
+        border-radius: 8px;
+        resize: none;
+        
+        &:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+      }
+    }
+  
+    .modal-footer {
+      border-top: 1px solid #eaeaea;
+    }
+  
+    .valid {
+      color: red;
+      margin-left: 5px;
+    }
+  }

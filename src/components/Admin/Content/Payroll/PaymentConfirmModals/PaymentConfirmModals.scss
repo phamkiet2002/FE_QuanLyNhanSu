@@ -1,0 +1,36 @@
+$warning-text: #7d5e28;
+$warning-bg: #fcf0db;
+$warning-border: #fbeacd;
+$border-radius: 0.25rem;
+$spacing-base: 1rem;
+
+
+.alert {
+  position: relative;
+  padding: 0.75rem $spacing-base;
+  margin-bottom: $spacing-base;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  
+
+  &.alert-warning {
+    color: $warning-text;
+    background-color: $warning-bg;
+    border-color: $warning-border;
+    box-shadow: 0 2px 4px rgba($warning-text, 0.1);
+
+    &:hover {
+      background-color: darken($warning-bg, 2%);
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}

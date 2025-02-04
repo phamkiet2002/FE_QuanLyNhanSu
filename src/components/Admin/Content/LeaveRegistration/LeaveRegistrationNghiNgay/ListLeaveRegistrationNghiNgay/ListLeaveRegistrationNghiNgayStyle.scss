@@ -1,0 +1,121 @@
+.LeaveRegistration {
+    .m-1 {
+        margin: 30px;
+    }
+
+    .row-tool {
+        padding: 20px 0 0 20px;
+    }
+
+    .LeaveRegistration_table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
+        thead {
+            background-color: #f8f8f8;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        th {
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+            text-align: left;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.2s;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.2rem;
+                transition: all 0.2s ease;
+                margin-right: 0.5rem;
+
+                &.btn-sm {
+                    padding: 0.25rem;
+                }
+
+                &.btn-outline-primary {
+                    color: #0d6efd;
+                    border: 1px solid #0d6efd;
+                    
+                    &:hover {
+                        color: #fff;
+                        background-color: #0d6efd;
+                    }
+                }
+
+                &.btn-outline-danger {
+                    color: #dc3545;
+                    border: 1px solid #dc3545;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #dc3545;
+                    }
+                }
+
+                .mr-1 {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    padding: 0.25rem;
+                }
+            }
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .LeaveRegistration_pendingApproval_Daduyet {
+            color: green;
+            font-weight: bold;
+        }
+
+        .LeaveRegistration_pendingApproval_Tuchoi {
+            color: red;
+            font-weight: bold;
+        }
+
+        .LeaveRegistration_pendingApproval_Chuaduyet {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .LeaveRegistration_pendingApproval_Dahuy {
+            color: gray;
+            font-weight: bold;
+        }
+    }
+
+    .wrap_fillter {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+
+        .fillter {
+            flex-grow: 1;
+        }
+
+        .btn-primary {
+            margin-left: auto;
+        }
+    }
+}

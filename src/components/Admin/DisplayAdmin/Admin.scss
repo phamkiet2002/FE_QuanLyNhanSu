@@ -1,0 +1,74 @@
+.admin-container {
+    display: flex;
+
+    .admin-sidebar {
+        height: 100vh;
+
+        .pro-sidebar {
+            height: 100%;
+        }
+    }
+
+    .admin-content {
+        width: 100%;
+        .admin-header {
+
+            background-color: #2A3042;
+            height          : 60px;
+            display         : flex;
+            align-items     : center;
+
+            position        : fixed;
+            top             : 0;
+            right           : 0;
+            // left       : 0;  
+            // width        : calc(100%);
+
+            &.collapsed {
+                //width                  : calc(1264px + 200px);
+                //left   : 266px;ư
+                width: calc(100% - 77px);
+            }
+
+            &:not(.collapsed) {
+                //width: 1264px;
+                //left   : 266px;
+                width: calc(100% - 266px);
+            }
+
+
+            z-index : 999;
+
+
+            .admin-toggle {
+                margin-right: 15px;
+            }
+
+            .admin-namepage {
+                margin-right: auto;
+
+            }
+
+            .admin-nav {
+               
+            }
+
+        }
+
+        .admin-main {
+            margin-top: 70px;
+            transition: margin-left 0.3s ease, width 0.3s ease;
+            margin-bottom: 20px;
+
+            &.collapsed {
+                margin-left: 77px;
+                width      : calc(100% - 77px);
+            }
+
+            &:not(.collapsed) {
+                margin-left: 270px;
+                width      : calc(100% - 270px);
+            }
+        }
+    }
+}

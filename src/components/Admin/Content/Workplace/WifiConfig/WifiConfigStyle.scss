@@ -1,0 +1,28 @@
+.wifi-config {
+    .get-wifi-btn {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #fff;
+      &.loading {
+        opacity: 0.8;
+        cursor: wait;
+      }
+  
+      .icon-spin {
+        animation: spin 5s linear infinite;
+      }
+    }
+  
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }

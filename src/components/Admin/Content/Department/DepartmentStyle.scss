@@ -1,0 +1,17 @@
+.department-content {
+    .table-department-container {
+        .wrap_fillter {
+            display       : flex;
+            flex-direction: row;
+            margin        : 20px;
+
+            .fillter {
+                flex-grow: 1;
+            }
+
+            .btn-primary {
+                margin-left: auto;
+            }
+        }
+    }
+}

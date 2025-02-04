@@ -1,0 +1,169 @@
+// Variables
+$primary-color: #0d6efd;
+$success-color: #198754;
+$danger-color: #dc3545;
+$text-muted: #6c757d;
+$border-color: #dee2e6;
+$white: #ffffff;
+$light-bg: #f8f9fa;
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+// Payment Modal Styles
+.modal {
+  .modal-content {
+    border-radius: $border-radius;
+    box-shadow: $shadow-md;
+  }
+}
+
+// Payment Tabs
+.nav-tabs {
+  border-bottom: 2px solid $border-color;
+  margin-bottom: 1.5rem;
+  
+  .nav-link {
+    border: none;
+    color: $text-muted;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    
+    &:hover {
+      color: $primary-color;
+      background-color: rgba($primary-color, 0.05);
+    }
+    
+    &.active {
+      color: $primary-color;
+      background-color: transparent;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-color;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+// QR Payment Section
+.payment-info {
+  padding: 1.5rem;
+  
+  .info-item {
+    margin-bottom: 1.25rem;
+    
+    label {
+      color: $text-muted;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    
+    p {
+      margin: 0;
+      font-weight: 500;
+      
+      &.text-danger {
+        color: $danger-color;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.qr-container {
+  .qr-wrapper {
+    background-color: $white;
+    padding: 1rem;
+    border-radius: $border-radius;
+    box-shadow: $shadow-sm;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+    
+    img {
+      max-width: 240px;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+// Cash Payment Section
+.cash-payment {
+  background: $light-bg;
+  border-radius: $border-radius;
+  padding: 2rem;
+  
+  .text-center {
+    .text-success {
+      color: $success-color;
+      animation: pulse 2s infinite;
+    }
+    
+    h4 {
+      color: $text-muted;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+  }
+  
+  .payment-details {
+    max-width: 500px;
+    margin: 0 auto;
+    background: $white;
+    padding: 1.5rem;
+    border-radius: $border-radius;
+    box-shadow: $shadow-sm;
+    
+    .info-item {
+      margin-bottom: 1.25rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      label {
+        color: $text-muted;
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+      
+      p {
+        margin: 0;
+        font-weight: 500;
+        
+        &.text-danger {
+          color: $danger-color;
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

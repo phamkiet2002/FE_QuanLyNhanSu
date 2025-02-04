@@ -1,0 +1,88 @@
+.attendance-modal {
+    .modal-content {
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .modal-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #eaeaea;
+      padding: 1rem 1.5rem;
+  
+      .modal-title {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #2c3e50;
+  
+        svg {
+          color: #3498db;
+        }
+      }
+    }
+  
+    .modal-body {
+      padding: 1.5rem;
+  
+      .form-label {
+        font-weight: 500;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+  
+        svg {
+          color: #3498db;
+        }
+      }
+  
+      .time-input {
+        height: 45px;
+        border-radius: 8px;
+        border: 1px solid #dee2e6;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+  
+        &:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+      }
+  
+      .note-input {
+        border-radius: 8px;
+        resize: none;
+        
+        &:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+      }
+    }
+  
+    .modal-footer {
+      border-top: 1px solid #eaeaea;
+      padding: 1rem 1.5rem;
+  
+      .btn {
+        padding: 0.5rem 1.5rem;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+  
+        &:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+        }
+      }
+  
+      .save-btn {
+        background-color: #3498db;
+        border-color: #3498db;
+  
+        &:hover:not(:disabled) {
+          background-color: #2980b9;
+          border-color: #2980b9;
+        }
+      }
+    }
+  }
