@@ -1,0 +1,29 @@
+.modal-create {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  .modal-dialog {
+    max-width: 40%; 
+    width: 40%; 
+    .modal-content {
+        width: 70%;
+        padding: 20px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+  .modal-header {}
+
+  .modal-body {
+    label {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  .modal-footer {}
+
+  .valid {
+    color: red;
+  }
+}

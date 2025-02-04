@@ -1,0 +1,127 @@
+.custom-notification-dropdown {
+    position: absolute;
+    z-index: 1000;
+    width: 320px;
+    max-height: 560px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: translate3d(-295px, 10px, 0px);
+  
+    .dropdown-header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 10;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e5e5e5;
+      color: #007bff;
+    }
+  
+    .notification-list {
+      max-height: 520px;
+      padding: 0;
+  
+      .notification-item {
+        display: flex;
+        padding: 10px 15px;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.2s ease;
+        animation: fadeIn 0.3s ease-in-out;
+        @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        &:hover {
+          background-color: #f9f9f9;
+        }
+  
+        &.unread {
+          background-color: rgba(80, 165, 241, 0.15);
+        }
+        .icon {
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+  
+          .warning-icon {
+            color: #ffa726;
+            font-size: 1.5rem;
+          }
+  
+          .success-icon {
+            color: #66bb6a;
+            font-size: 1.5rem;
+          }
+        }
+  
+        .content {
+          flex-grow: 1;
+  
+          .title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+          }
+  
+          .message {
+            font-size: 0.85rem;
+            color: #666;
+            margin: 5px 0;
+          }
+  
+          .time {
+            font-size: 0.75rem;
+            color: #999;
+          }
+        }
+      }
+    }
+  
+    .spinner-border {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .notification-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+  
+      .spinner-border {
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: #6c757d;
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

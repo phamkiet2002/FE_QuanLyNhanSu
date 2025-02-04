@@ -1,0 +1,38 @@
+.table-container {
+  .registration-table{
+      thead {
+        background-color: #f8f8f8;
+        color: #333;
+        font-weight: bold;
+      }
+
+      th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .status-daduyet {
+        color: green;
+        font-weight: bold;
+      }
+
+      .status-chuaduyet {
+        color: orange;
+        font-weight: bold;
+      }
+
+      .status-tuchoi {
+        color: red;
+        font-weight: bold;
+      }
+      .status-dahuy {
+        color: gray;
+        font-weight: bold;
+      }
+  }
+    
+  }

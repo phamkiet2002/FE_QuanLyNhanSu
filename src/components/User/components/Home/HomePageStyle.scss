@@ -1,0 +1,134 @@
+.homepage-container {
+  // background-color: #f0f0f0;
+  border-radius: 8px;
+  .homepage-card{
+
+    .card-backround {
+      background-image: url('../../../../assets/card_backround.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      .card-body {
+        h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #28a745;
+          margin: 1rem 0;
+        }
+        
+        .text-muted {
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .button-attendance {
+    padding: 20px;
+  }
+
+  .homepage-attendance{
+    
+    .button-checkin-custom {
+      height: 80px;
+      width: 350px;
+      margin-top: 5px;
+      margin-right: 5px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        .text-start{
+            .text-size {
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .text-under-checkin {
+              font-size: 14px;
+              font-weight: lighter;
+            }
+        }
+      }
+    
+    .button-checkout-custom {
+      height: 80px;
+      width: 350px;
+      margin-top: 5px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      .text-start{
+        .text-size {
+          font-size: 22px;
+          font-weight: 500;
+        }
+        .text-under-checkout {
+          font-size: 14px;
+          font-weight: lighter;
+        }
+      }
+        
+    }
+  }
+  .homepage-menu{
+    .button-leaveregistration-custom,
+    .button-salarytable-custom,
+    .button-attendancetable-custom,
+    .button-employee-custom,
+    .button-department-custom,
+    .button-level-custom,
+    .button-position-custom,
+    .button-allowance-custom,
+    .button-penalty-custom,
+    .button-attendancesetting-custom,
+    .button-leavedate-custom {
+        background-color: #ffffff;
+        color: #333; 
+        border: 1px solid #ddd;
+        padding: 10px 20px; 
+        border-radius: 4px; 
+        text-align: center;
+        font-weight: 500; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease; 
+        height: 60px;
+        width: 250px;
+       }
+       .button-leaveregistration-custom:hover,
+       .button-salarytable-custom:hover,
+       .button-attendancetable-custom:hover,
+       .button-employee-custom:hover,
+       .button-department-custom:hover,
+       .button-level-custom:hover,
+       .button-position-custom:hover,
+       .button-allowance-custom:hover,
+       .button-penalty-custom:hover,
+       .button-attendancesetting-custom:hover,
+       .button-leavedate-custom:hover {
+          background-color: #f0f0f0; 
+          border-color: #bbb; 
+          color: #000;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+        }
+     }
+     
+  
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+
+.button-checkin-custom svg,
+.button-checkout-custom svg {
+  font-size: 24px;
+  margin-right: 8px;
+}
